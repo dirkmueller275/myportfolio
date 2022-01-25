@@ -1,0 +1,23 @@
+.datenschutz{
+    color: white;
+    margin-left: 120px;
+margin-top: 120px;
+font-family: 'Inter', sans-serif;
+
+}
+
+@media(max-width: 600px){
+
+
+    .datenschutz{
+        // margin-top: 0;
+        background-color: black;
+        font-family: 'Inter', sans-serif !important;
+         font-size: 20px; 
+        margin-right: 48px;
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+}

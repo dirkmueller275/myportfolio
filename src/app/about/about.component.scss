@@ -1,0 +1,115 @@
+.about{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+height: 100vh;
+  margin-top: 120px;
+  margin-right: 200px;
+ // flex-direction: column;
+  font-size: 30px;
+    img{
+
+        height: 251px;
+  width: 250px;
+ 
+object-fit:cover;
+object-position: top; 
+
+ margin-right: 120px;
+    }
+}
+h1{
+    color: white;
+    margin-top: 120px;
+    margin-left: 120px;
+}
+.block {
+  border-radius: 100%;
+  position: relative;
+  margin: 17px auto 0;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before, .block:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  filter: blur(50px);
+}
+
+.btn{
+
+  margin-left: 20px;
+  margin-bottom: 500px;
+
+  
+    display: block;
+    height: 50px;
+    width: 186px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 18px;
+    
+    &:after {
+      position: absolute;
+      content:'';
+      display: inline-block;
+      background: rgba(59,173,227,1);
+      background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgba(87,111,230,1) 25%, rgba(152,68,183,1) 51%, rgba(255,53,127,1) 100%);
+      height: 50px;
+      width: 372px;
+      z-index: -1;
+      transform: translateX(-280px);
+      transition: transform 400ms ease-in;
+    }
+    
+    &:hover {
+      &:after {
+        transform: translateX(-200px);
+      }
+    }
+    span {
+      position: relative;
+      top: 16px;
+    }
+  }
+  .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
