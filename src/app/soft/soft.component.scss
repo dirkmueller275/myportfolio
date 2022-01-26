@@ -89,11 +89,15 @@ img{
 
 @media (max-width: 1000px){
 
-   
-  .skills{
+   h1{
 
-    // padding: 110px;  
-    // margin-top: 200px;
+    margin: 10rem
+   }
+  .skills{
+margin-top: 0;
+padding: 0;
+    
+    
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -109,24 +113,25 @@ img{
       
     }   
     .skills-second{
-
-    //   padding: 110px;  
-    // margin-top: 200px;
+      margin-top: 0;
+      padding: 0;
+    
+    
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-direction: column;
     } 
     .skill-alone{
-    //   padding: 110px;  
-    // margin-top: 200px;
+     
+    margin-top: 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-direction: column;
     }
     .skillbox{
-
+margin: 20px;
       height: 120px;
       width: 120px;
       background-color: white;
