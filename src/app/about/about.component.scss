@@ -112,4 +112,18 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+  @media (max-width: 1000px){
+
+    .about{
+      margin-right: 0;
+      flex-direction: column;
+      margin-top: 300px;
+      justify-content: space-evenly;
+    }
+    .btn{
+      margin-bottom: 325px;
+    }
+    h1{
+      text-align: center;
+    }
+  }
