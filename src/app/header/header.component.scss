@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
   margin-top: -35px;
@@ -14,9 +14,12 @@
 .other{
   color: #2DFCD8;
 }
+h1{
+  font-size: 64px;
+}
 .mainpicture img {
-  height: 250px;
-  width: 250px;
+  height: 350px;
+  width: 350px;
   border-radius: 100%;
   object-fit: cover;
   object-position: top;
@@ -24,15 +27,35 @@
   margin-right: 120px;
 }
 
-// 
+button{
+  background-color: black;
+    color: #2DFCD8;
+    border: none;
+    cursor: pointer;
+}
+.button-container{
 
-  .button-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 540px;
+  height: 60px;
+  width: 180px;
+  position: absolute ;
+  background-color: black;
+  border: 2px solid #2DFCD8 ;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+  text-align: center;
+  color:  #2DFCD8;
+  background-color: black;
+  font-size: 18px;
+  text-decoration: none;
+  a{
+    cursor: pointer;
   }
+}
+
   @media (max-width: 1000px){
 
     .container{
@@ -40,11 +63,13 @@
       align-items: center;
       justify-content: space-evenly;
       flex-direction: column-reverse;
+      margin-left: 0;
+      margin-top: 0;
     }
-    .btn{
+    // .btn{
 
-      margin-top: 125px;
-    }
+    //   margin-top: 125px;
+    // }
 
     p{
 

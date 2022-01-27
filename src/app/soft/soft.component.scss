@@ -49,23 +49,29 @@ span {
 
 
 .achievement-box-icon {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 100px;
+  height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 1px; */
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 122px;
+    box-shadow: 0 5px 10px 5px #00000026;
+    
 }
   p{
     color: black;
-    padding-top: 120px;
-    font-size: 20px;
+    padding-top: 150px;
+    font-size: 18px;
+    text-align: center;
   }
 
 .skillbox{
 
   height: 120px;
-  width: 120px;
+  width: 200px;
   background-color: white;
   color: black;
   display: flex;
@@ -75,16 +81,25 @@ span {
   margin: 20px;
 }
 
+// .iconback{
+//   height: 80px;
+//   width: 80px;
+//   background-color: blue;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+  
+// }
 
 img{
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   // padding-right: 30px;
-  border-radius: 100%;
-  background-color: white;
-  object-fit: contain;
+  
+  
+  object-fit: cover;
   position: absolute;
-  border: black 1px solid;
+  
  
 }
 
@@ -104,15 +119,15 @@ padding: 0;
       justify-content: space-between;
       flex-direction: column;
     }
-    .achievement-box-icon {
-      height: 100px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 100px;
+  //   .achievement-box-icon {
+  //     height: 100px;
+  // width: 100px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // padding-bottom: 100px;
       
-    }   
+  //   }   
     .skills-second{
       margin-top: 0;
       padding: 0;
