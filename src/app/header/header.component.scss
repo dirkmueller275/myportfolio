@@ -30,31 +30,57 @@ h1{
 button{
   background-color: black;
     color: #2DFCD8;
-    border: none;
+    height: 64px;
+    width: 180px;
+    border: 1px solid #2DFCD8;
     cursor: pointer;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    a{
+      text-decoration: none;
+      color: #2DFCD8;
+    }
+    
+    
 }
-.button-container{
+button:hover{
 
-  height: 60px;
-  width: 180px;
-  position: absolute ;
-  background-color: black;
-  border: 2px solid #2DFCD8 ;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn{
-  text-align: center;
-  color:  #2DFCD8;
-  background-color: black;
-  font-size: 18px;
+  background-color: #2DFCD8;
+  color: white;
+  text-shadow: black;
+  font-size: 20px;
+  
+    a{
   text-decoration: none;
-  a{
-    cursor: pointer;
-  }
+  color: black;
+  
 }
+}
+
+// .button-container{
+
+//   height: 60px;
+//   width: 180px;
+//   position: absolute ;
+//   background-color: black;
+//   border: 2px solid #2DFCD8 ;
+//   border-radius: 8px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+// .btn{
+//   text-align: center;
+//   color:  #2DFCD8;
+//   background-color: black;
+//   font-size: 18px;
+//   text-decoration: none;
+  a{
+    
+  }
+
 
   @media (max-width: 1000px){
 

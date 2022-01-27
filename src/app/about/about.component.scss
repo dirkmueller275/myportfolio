@@ -35,84 +35,46 @@ h1{
   background: linear-gradient(0deg, #000, #272727);
 }
 
-.block:before, .block:after {
-  content: '';
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-    #0000ff, #00ff00,#ffff00, #ff0000);
-  background-size: 400%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  z-index: -1;
-  animation: steam 20s linear infinite;
+button{
+  background-color: black;
+    color: #2DFCD8;
+    height: 64px;
+    width: 180px;
+    border: 1px solid #2DFCD8;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    a{
+      text-decoration: none;
+      color: #2DFCD8;
+    }
+    
+    
 }
+button:hover{
 
-@keyframes steam {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.block:after {
-  filter: blur(50px);
-}
-
-.btn{
-
-  margin-left: 20px;
-  margin-bottom: 500px;
-
+  background-color: #2DFCD8;
+  color: white;
+  text-shadow: black;
+  font-size: 20px;
   
-    display: block;
-    height: 50px;
-    width: 186px;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 18px;
-    
-    &:after {
-      position: absolute;
-      content:'';
-      display: inline-block;
-      background: rgba(59,173,227,1);
-      background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgba(87,111,230,1) 25%, rgba(152,68,183,1) 51%, rgba(255,53,127,1) 100%);
-      height: 50px;
-      width: 372px;
-      z-index: -1;
-      transform: translateX(-280px);
-      transition: transform 400ms ease-in;
-    }
-    
-    &:hover {
-      &:after {
-        transform: translateX(-200px);
-      }
-    }
-    span {
-      position: relative;
-      top: 16px;
-    }
-  }
-  .button-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    a{
+  text-decoration: none;
+  color: black;
+  
+}
+}
+   .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+   }
+
+
+
   @media (max-width: 1000px){
 
     .about{
